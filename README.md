@@ -57,3 +57,37 @@ typeset -g POWERLEVEL9K_SHORTEN_STRATEGY=truncate_to_last
 ```
 
 ## 5. The next plugins are the basic ones that I use.
+
+First add the plugins list to your .zshrc with the following commands, these commands only work if you didn't add any plugins before.
+
+```zsh
+sed -i 's/^plugins=(.*)/plugins=(/g' ~/.zshrc
+sed -i '/^plugins=(/a \
+  git \
+  sudo \
+  web-search \
+  alias-finder \
+  jsontools \
+  copypath \
+  copyfile \
+  copybuffer \
+  dirhistory \
+  history \
+  extract \
+  zsh-autosuggestions \
+  zsh-syntax-highlighting \
+)\
+' ~/.zshrc
+```
+
+Then add the repos needed for these two plugins.
+
+```zsh
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+```
+
+For more information about the plugins check the documentation or this video
+https://www.youtube.com/watch?v=LEOqiyxx16c&t=577s
+https://lobogit.unm.edu/blue/linux-cfg/-/tree/master/.oh-my-zsh/plugins/extract 
+
