@@ -3,7 +3,9 @@ First you have to update your linux distribution.
 
 ```zsh
 sudo dnf update && sudo dnf upgrade
-# OR
+```
+OR
+```zsh
 sudo apt update && sudo apt upgrade
 ```
 You need to have installed git
