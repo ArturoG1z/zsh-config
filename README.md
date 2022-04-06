@@ -48,16 +48,12 @@ To start the powerlevel10k you can restart your terminal or run the following co
 source ~/.zshrc
 ```
 
-If you want that the shown path only show the last folder you can add the following line to your .p10k.zsh.
+If you want that the shown path only show the last folder you can change the following line to your .p10k.zsh.
 
 ```zsh
-sed -i 's/^typeset -g POWERLEVEL9K_SHORTEN_STRATEGY=truncate_to_unique/typeset -g POWERLEVEL9K_SHORTEN_STRATEGY=truncate_to_last/g' ~/.p10k.zsh
+typeset -g POWERLEVEL9K_SHORTEN_STRATEGY=truncate_to_unique
+TO 
+typeset -g POWERLEVEL9K_SHORTEN_STRATEGY=truncate_to_last
 ```
-To revert the last change you can run the following command.
-
-```zsh
-sed -i 's/^typeset -g POWERLEVEL9K_SHORTEN_STRATEGY=truncate_to_last/typeset -g POWERLEVEL9K_SHORTEN_STRATEGY=truncate_to_unique/g' ~/.p10k.zsh
-```
-
 
 ## 5. The next plugins are the basic ones that I use.
