@@ -91,3 +91,10 @@ For more information about the plugins check the documentation or this video
 https://www.youtube.com/watch?v=LEOqiyxx16c&t=577s
 https://lobogit.unm.edu/blue/linux-cfg/-/tree/master/.oh-my-zsh/plugins/extract 
 
+
+## 6. To finish just reload your terminal or recharge the zshrc file.
+
+```zsh
+source ~/.zshrc
+```
+
